@@ -9564,12 +9564,12 @@ ul.slick-dots li.slick-active {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 20px;
+  gap: 100px;
 }
 
 .map-container iframe {
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 
 @media only screen and (max-width: 768px) {
