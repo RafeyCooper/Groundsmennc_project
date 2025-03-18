@@ -29,13 +29,16 @@
     <!--====== Jquery UI css ======-->
     <link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.min.css">
     <!--====== Nice Select css ======-->
-    <link rel="stylesheet" href="assets/vendor/nice-select/css/nice-select.css">
+    <!-- <link rel="stylesheet" href="assets/vendor/nice-select/css/nice-select.css"> -->
     <!--====== Animate css ======-->
     <link rel="stylesheet" href="assets/vendor/animate.css">
     <!--====== Default css ======-->
     <link rel="stylesheet" href="assets/css/default.css">
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css?ver=1.1">
+
+    <link rel="stylesheet" href="./assets/css/service-area-2.css">
+
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
@@ -328,17 +331,168 @@
             </div>
         </div>
     </header>
+
+    <section class="service-area-section">
+        <div class="service-area-main-box">
+            <div class="service-bg-dark"></div>
+            <div class="left">
+                <div class="left-main-box">
+                    <div class="first-row">
+                        <div class="rating-box">
+                            <div class="left">
+                                <img src="https://lapeyreroofing.com/images/core/tree-left.webp" alt="">
+                                <p><span class="bold-1">5-STAR</span> RATED BY <br> 70+ CUSTOMERS</p>
+                                <img src="https://lapeyreroofing.com/images/core/tree-right.webp" alt="">
+                            </div>
+                            <div class="right">
+                                <img src="https://lapeyreroofing.com/images/core/protection.svg" alt="">
+                                <p><span class="bold-1">SATISFACTION</span><br> GUARANTEED</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first-section-heading">Best Landscaping Company in <span class="green">Concord</span>
+                    </div>
+                    <div class="first-section-para">Trust our experienced landscaping team for lawn care, gardening, and
+                        hardscaping for your home or business secure year-round.</div>
+                    <div class="first-section-tags">
+                        <div class="tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
+                                color="rgb(255, 255, 255)" style="
+											user-select: none;
+											width: 15px;
+											height: 100%;
+											display: inline-block;
+											fill: rgb(255, 255, 255);
+											color: rgb(255, 255, 255);
+											flex-shrink: 0;
+										">
+                                <g color="rgb(255, 255, 255)" weight="bold">
+                                    <path
+                                        d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z">
+                                    </path>
+                                </g>
+                            </svg>
+                            Lawn Care & Mowing
+                        </div>
+
+                        <div class="tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
+                                color="rgb(255, 255, 255)" style="
+											user-select: none;
+											width: 15px;
+											height: 100%;
+											display: inline-block;
+											fill: rgb(255, 255, 255);
+											color: rgb(255, 255, 255);
+											flex-shrink: 0;
+										">
+                                <g color="rgb(255, 255, 255)" weight="bold">
+                                    <path
+                                        d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z">
+                                    </path>
+                                </g>
+                            </svg>
+                            Hardscaping Features
+                        </div>
+
+                        <div class="tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
+                                color="rgb(255, 255, 255)" style="
+											user-select: none;
+											width: 15px;
+											height: 100%;
+											display: inline-block;
+											fill: rgb(255, 255, 255);
+											color: rgb(255, 255, 255);
+											flex-shrink: 0;
+										">
+                                <g color="rgb(255, 255, 255)" weight="bold">
+                                    <path
+                                        d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z">
+                                    </path>
+                                </g>
+                            </svg>
+                            Tree Services
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="first-section-right-form">
+                    <div class="first-section-form-inner">
+                        <div class="form-first-heading">Get a <a href="#">FREE</a></div>
+                        <div class="form-second-heading">Landscaping/Lawn Care Estimate Today!</div>
+                        <div class="input-boxes">
+                            <select id="schedule_service" required>
+                                <option selected disabled>Choose Service*</option>
+                                <option value="Lawn Care & Mowing">Lawn Care & Mowing</option>
+                                <option value="Hardscaping">Hardscaping - Retaining Walls, Patios, Garden Beds, and
+                                    more.</option>
+                                <option value="Landscape Design">Landscape Design</option>
+                                <option value="Bush & Tree Trimming">Bush & Tree Trimming</option>
+                                <option value="Mulching">Mulching</option>
+                                <option value="Planting">Planting</option>
+                                <option value="Yard Maintenance">General Yard Maintenance</option>
+
+                            </select>
+                            <input type="text" id="schedule_address" placeholder="Enter Full Address*" required>
+                            <input type="text" id="schedule_name" placeholder="Name*" required>
+                            <input type="email" id="schedule_email" placeholder="Email*" required>
+                            <input type="tel" id="schedule_phone" placeholder="Phone Number*" required>
+                            <div class="schedule_message"></div>
+                            <button type="submit" class="scheduleBtn" id="schedule_btn_form">Schedule FREE
+                                Estimate</button>
+                            <div class="first-section-form-last-box">
+                                <div class="first-section-form-last-box-left">
+                                    <img src="https://groundsmennc.com/assets/images/gml-round.webp" width="60px"
+                                        alt="">
+                                </div>
+                                <div class="first-section-form-last-box-right">
+                                    <div class="custom-google-rating-main-box-2">
+                                        <div class="custom-google-rating-2">
+                                            <div class="left-rating-2">
+                                                <img src="https://groundsmennc.com/assets/images/g-logo-white.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="right-rating-2">
+                                                <div class="stars-box-2">
+                                                    <div class="star-2"><img src="https://groundsmennc.com/assets/images/white-star.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="star-2"><img src="https://groundsmennc.com/assets/images/white-star.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="star-2"><img src="https://groundsmennc.com/assets/images/white-star.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="star-2"><img src="https://groundsmennc.com/assets/images/white-star.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="star-2"><img src="https://groundsmennc.com/assets/images/white-star.png"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text-box-2">5.0 RATING</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--====== Start Banner Section ======-->
-    <section class="banner-section">
-        <!--====== Hero Wrapper ======-->
+    <!-- <section class="banner-section">
         <div class="hero-wrapper-three">
             <div class="hero-waves">
                 <img src="assets/images/hero/bg-2.png" class="waves one" alt="">
                 <img src="assets/images/hero/bg.png" class="waves two" alt="">
             </div>
-            <!--====== Hero Slider ======-->
             <div class="hero-slider-two">
-                <!--====== Single Slider ======-->
                 <div class="single-slider">
                     <div class="image-layer bg_cover"
                         style="background-image: url(assets/images/lawn-mover-on-green-grass-machine-for-cutting-law-2023-11-27-04-52-32-utc.webp);">
@@ -346,7 +500,6 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-xl-10">
-                                <!--====== Hero Content ======-->
                                 <div class="hero-content text-center">
                                     <span class="sub-title" data-animation="fadeInUp" data-delay=".4s">Beautiful
                                         Gardening</span>
@@ -364,7 +517,6 @@
                         </div>
                     </div>
                 </div>
-                <!--====== Single Slider ======-->
                 <div class="single-slider">
                     <div class="image-layer bg_cover"
                         style="background-image: url(assets/images/landscaper-pushing-scarifier-machine-taking-care-o-2023-11-27-05-31-37-utc.webp);">
@@ -372,7 +524,6 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-xl-10">
-                                <!--====== Hero Content ======-->
                                 <div class="hero-content text-left">
                                     <span class="sub-title" data-animation="fadeInUp" data-delay=".4s">Beautiful
                                         Gardening</span>
@@ -387,7 +538,6 @@
                         </div>
                     </div>
                 </div>
-                <!--====== Single Slider ======-->
                 <div class="single-slider">
                     <div class="image-layer bg_cover"
                         style="background-image: url(assets/images/yard-man-spreading-mulch-in-outdoor-garden-area-of-2023-11-27-05-08-30-utc.webp);">
@@ -395,7 +545,6 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-xl-10">
-                                <!--====== Hero Content ======-->
                                 <div class="hero-content text-right">
                                     <span class="sub-title" data-animation="fadeInUp" data-delay=".4s">Beautiful
                                         Yard</span>
@@ -415,7 +564,8 @@
                 </div>
             </div>
         </div>
-    </section><!--====== End Banner Section ======-->
+    </section> -->
+    <!--====== End Banner Section ======-->
     <!--====== Start Features Section ======-->
     <section class="features-section pt-95">
         <div class="container">
@@ -1119,7 +1269,7 @@
     <!--====== Waypoints js ======-->
     <script src="assets/vendor/jquery.waypoints.js"></script>
     <!--====== Nice-select js ======-->
-    <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+    <!-- <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script> -->
     <!--====== jquery UI js ======-->
     <script src="assets/vendor/jquery-ui/jquery-ui.min.js"></script>
     <!--====== WOW js ======-->
