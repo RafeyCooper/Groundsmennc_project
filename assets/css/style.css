@@ -1817,11 +1817,17 @@ button {
 
 .header-top-bar .top-right ul.social-link li:not(:last-child) {
   -webkit-margin-end: 20px;
+
+
   margin-inline-end: 20px;
 }
 
+.main-menu {
+  margin-left: 30px;
+}
+
 .header-top-bar-two {
-  padding: 16px 0;
+  padding: 0.625rem 0;
 }
 
 .header-top-bar-two .top-left span:not(:last-child) {
@@ -2164,6 +2170,7 @@ button {
 
 .header-three .header-navigation .site-branding {
   max-width: 220px;
+  margin-left: 30px;
 }
 
 @media (max-width: 575px) {
@@ -9550,5 +9557,30 @@ ul.slick-dots li.slick-active {
 }
 
 .site-branding {
-  margin-left: 30px;
+  margin-left: 30px !important;
+}
+
+.map-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 600px;
+}
+
+@media only screen and (max-width: 768px) {
+  .map-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .map-container iframe {
+    width: 100%;
+    height: 400px;
+  }
 }

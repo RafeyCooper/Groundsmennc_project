@@ -2,6 +2,10 @@
     - Margin & Padding
 -----------------------------------------*/
 /*-- Margin Top --*/
+
+.header-top-bar-two{
+    padding:0.625rem 0px !important;
+}
 .mt-5 {
   margin-top: 5px; }
 
