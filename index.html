@@ -37,7 +37,7 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css?ver=1.1">
 
-    <link rel="stylesheet" href="./assets/css/service-area-2.css?ver=1.4">
+    <link rel="stylesheet" href="./assets/css/service-area-2.css?ver=1.6">
 
     <!-- <link rel="preload" href="https://player.vimeo.com/video/1067353065" as="video"> -->
 
@@ -84,6 +84,23 @@
         font-size: 1.2em;
         margin-top: 10px;
     }
+
+    .background-image {
+        display: none;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* @media (max-width: 768px) {
+        .background-video {
+            display: none;
+        }
+
+        .background-image {
+            display: block;
+        }
+    } */
 </style>
 
 <body>
@@ -339,13 +356,13 @@
         <div class="service-area-main-box">
             <div class="video-background-main">
                 <div class="video-background">
-                    <video autoplay muted loop playsinline loading="lazy">
+                    <video autoplay muted loop playsinline loading="lazy" class="background-video">
                         <source src="./assets/video/bg-video-optimized.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <img src="./assets/video/bg-image.jpg" alt="Background image for mobile" class="background-image">
                 </div>
             </div>
-
             <div class="service-bg-dark"></div>
             <div class="left">
                 <div class="left-main-box">
@@ -502,10 +519,6 @@
         </div>
     </section>
 
-
-    <!-- <section>
-        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1067115331?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Groundsmen Landscaping &amp; Lawn Care Concord"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-    </section> -->
 
     <!--====== Start Banner Section ======-->
     <!-- <section class="banner-section">
