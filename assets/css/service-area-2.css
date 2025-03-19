@@ -18,7 +18,11 @@
 
 .video-background {
     position: relative;
-    padding: 28.12%;
+    /* padding: 28.12%; */
+}
+
+.video-background video {
+    width: 100%;
 }
 
 .video-background iframe {
