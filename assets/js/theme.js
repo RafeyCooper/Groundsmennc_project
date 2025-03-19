@@ -166,9 +166,9 @@
     
     //===== Nice select js
     
-    if ($('select').length){
-        $('select').niceSelect();
-    }
+    // if ($('select').length){
+    //     $('select').niceSelect();
+    // }
     
     //===== Slick slider js
 
