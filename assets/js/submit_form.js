@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     var domain = window.location.origin;
+    var currentPageUrl = window.location.href;
 
     $('#contact-form').on('submit', function (event) {
         event.preventDefault();
@@ -17,7 +18,8 @@ $(document).ready(function () {
             email: $('#email').val(),
             phone: $('#phone').val(),
             message: $('#message').val(),
-            services: []
+            services: [],
+            pageUrl: currentPageUrl
         };
 
         $('input[name="services[]"]:checked').each(function () {
@@ -119,7 +121,8 @@ $(document).ready(function () {
             address: $('#schedule_address').val(),
             name: $('#schedule_name').val(),
             email: $('#schedule_email').val(),
-            phone: $('#schedule_phone').val()
+            phone: $('#schedule_phone').val(),
+            pageUrl: currentPageUrl
         };
 
         if (validateFormShedule(formData)) {

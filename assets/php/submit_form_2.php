@@ -14,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'] ?? '';
     $phone = $_POST['phone'] ?? '';
     $services = $_POST['service'] ?? '';
+    $pageUrl = $_POST['pageUrl'] ?? '';
 
     if (empty($name) || empty($email)){
         http_response_code(400);
@@ -33,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Port = 587;
 
         $mail->setFrom('groundsmenwebsiteform@gmail.com', 'groundsmennc');
-        $mail->addAddress('noahigler@gmail.com');
+        $mail->addAddress('getgroundskeeping@icloud.com');
 
         // Content
         $mail->isHTML(true);
@@ -43,7 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                           <p><strong>Address:</strong> $address</p>
                           <p><strong>Email:</strong> $email</p>
                           <p><strong>Phone:</strong> $phone</p>
-                          <p><strong>Services:</strong> $services</p>";
+                          <p><strong>Services:</strong> $services</p>
+                          <p><strong>Page URL:</strong> $pageUrl</p>";
 
         // Send the email
         $mail->send();
