@@ -3,6 +3,8 @@ $(document).ready(function () {
     var domain = window.location.origin;
     var currentPageUrl = window.location.href;
 
+    console.log(currentPageUrl);
+
     $('#contact-form').on('submit', function (event) {
         event.preventDefault();
         

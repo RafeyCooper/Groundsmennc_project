@@ -35,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mail->setFrom('groundsmenwebsiteform@gmail.com', 'groundsmennc');
         $mail->addAddress('getgroundskeeping@icloud.com');
+        $mail->addAddress('access@sustain-media.com');
 
         // Content
         $mail->isHTML(true);
