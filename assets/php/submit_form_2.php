@@ -37,8 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Content
         $mail->isHTML(true);
-        $mail->Subject = 'Schedule Form Submission';
-        $mail->Body    = "<h3>Contact Form Details</h3>
+        $mail->Subject = 'NEW Website Lead - Schedule Form Submission';
+        $mail->Body    = "<h3>Schedule Form Details</h3>
                           <p><strong>Name:</strong> $name</p>
                           <p><strong>Address:</strong> $address</p>
                           <p><strong>Email:</strong> $email</p>

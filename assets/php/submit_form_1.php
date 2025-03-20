@@ -38,14 +38,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Content
         $mail->isHTML(true);
-        $mail->Subject = 'Contact Form Submission';
+        $mail->Subject = 'NEW Website Lead - Contact Form Submission';
         $mail->Body    = "<h3>Contact Form Details</h3>
                           <p><strong>Name:</strong> $name</p>
                           <p><strong>Address:</strong> $address</p>
                           <p><strong>Email:</strong> $email</p>
                           <p><strong>Phone:</strong> $phone</p>
-                          <p><strong>Message:</strong> $message</p>
-                          <p><strong>Services:</strong> " . implode(', ', $services) . "</p>";
+                          <p><strong>Services:</strong> " . implode(', ', $services) . "</p>
+                          <p><strong>Message:</strong> $message</p>";
 
         // Send the email
         $mail->send();
