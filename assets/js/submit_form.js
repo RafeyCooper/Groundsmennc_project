@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    var domain = window.location.origin;
 
     $('#contact-form').on('submit', function (event) {
         event.preventDefault();
@@ -28,7 +29,7 @@ $(document).ready(function () {
             console.log(formData);
 
             $.ajax({
-                url: './assets/php/submit_form_1.php',
+                url: `${domain}/assets/php/submit_form_1.php`,
                 type: 'POST',
                 data: formData,
                 dataType: 'json',
@@ -126,7 +127,7 @@ $(document).ready(function () {
             console.log(formData);
 
             $.ajax({
-                url: './assets/php/submit_form_2.php',
+                url: `${domain}/assets/php/submit_form_2.php`,
                 type: 'POST',
                 data: formData,
                 dataType: 'json',
