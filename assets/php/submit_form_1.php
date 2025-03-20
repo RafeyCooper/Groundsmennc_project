@@ -28,13 +28,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'muhammadumair25591@gmail.com';
-        $mail->Password = 'pyca boyl wejq bjer';
+        $mail->Username = 'groundsmenwebsiteform@gmail.com';
+        $mail->Password = 'iojb txzq rxmi owhj';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('getgroundskeeping@icloud.com', 'groundsmennc');
-        $mail->addAddress('ali791ahmed@gmail.com');
+        $mail->setFrom('groundsmenwebsiteform@gmail.com', 'groundsmennc');
+        $mail->addAddress('noahigler@gmail.com');
 
         // Content
         $mail->isHTML(true);
