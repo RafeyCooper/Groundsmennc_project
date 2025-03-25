@@ -9641,3 +9641,12 @@ ul.slick-dots li.slick-active {
 .disabled {
   opacity: 0.7;
 }
+
+.bar-button {
+  display: none !important;
+}
+
+.disclaimer {
+  font-size: 0.8em;
+  color: #666;
+}
