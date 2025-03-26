@@ -9659,10 +9659,28 @@ ul.slick-dots li.slick-active {
   margin: 0 !important;
 }
 
+.nav-right-item .main-menu {
+  display: block;
+}
+
+.contact-link {
+  display: none !important;
+}
+
 @media only screen and (min-width: 1200px) {
   .nav-menu {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav-right-item .main-menu {
+    display: none;
+  }
+
+  .contact-link {
+    display: block !important;
   }
 }
