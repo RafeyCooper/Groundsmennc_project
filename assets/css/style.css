@@ -9684,3 +9684,7 @@ ul.slick-dots li.slick-active {
     display: block !important;
   }
 }
+
+.card-link {
+  width: 100%;
+}

@@ -45,7 +45,78 @@
     width: 100%;
     opacity: 0.8;
     z-index: 0;
+    background-repeat: no-repeat;
+    filter: brightness(40%);
+    background-size: cover;
 }
+
+/* === cabarrus-county === */
+#cabarrus-county {
+    background-image: url('../images/cabarrus-county-bg.jpg') !important;
+}
+
+#concord {
+    background-image: url('../images/concord-bg.jpeg') !important;
+}
+
+#lawn-care-concord {
+    background-image: url('../images/lawn-care-bg.jpg') !important;
+}
+
+#patios-concord {
+    background-image: url('../images/patios-bg.webp') !important;
+}
+
+#retaining-walls-concord {
+    background-image: url('../images/retaining-wall-bg.jpg') !important;
+}
+
+#harrisburg {
+    background-image: url('../images/harrisburg-bg.webp') !important;
+}
+
+#midland {
+    background-image: url('../images/midland-bg.jpg') !important;
+}
+
+#mount-pleansant {
+    background-image: url('../images/mount-pleasant-bg.jpg') !important;
+}
+
+/* === charlotte === */
+
+#hardscaping-charlotte {
+    background-image: url('../images/hardscaping-charlotte-6.jpeg') !important;
+}
+
+#garden-beds-charlotte {
+    background-image: url('../images/garden-beds-charlotte-bg.jpg') !important;
+}
+
+#retaining-walls-charlotte {
+    background-image: url('../images/retaining-wall-bg.jpg') !important;
+}
+
+#walkways-charlotte {
+    background-image: url('../images/walkways-charlotte-bg.jpg') !important;
+}
+
+#bush-trimming-charlotte {
+    background-image: url('../images/bush-trimming-10.jpeg') !important;
+}
+
+#lawn-care-charlotte {
+    background-image: url('../images/lawn-care-bg.jpg') !important;
+}
+
+#mulching-charlotte {
+    background-image: url('../images/mulching-charlotte-2.webp') !important;
+}
+
+#landscaping-charlotte {
+    background-image: url('../images/land-scaping-charlotte-bg.jpg') !important;
+}
+
 
 .service-area-main-box {
     max-width: 1280px;
@@ -258,6 +329,7 @@
 .card img {
     height: 288px;
     width: 100%;
+    object-fit: cover;
 }
 
 .top-content-box .heading {

@@ -628,3 +628,21 @@
 
 
 })(window.jQuery);
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the pathname from the URL
+    const path = window.location.pathname;
+
+    // Split the path and get the last part
+    const filename = path.split("/").pop().replace(".html", "");
+
+    // Find all matching containers
+    document.querySelectorAll(".service-area-main-box").forEach(box => {
+        const bg = box.querySelector(".service-bg-dark");
+        if (bg) {
+            bg.id = filename;
+        }
+    });
+});
